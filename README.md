@@ -8,8 +8,8 @@ Solvers.io project to predict gene expression from motif combinations in promote
 `example_data/example_500rows.csv` is an example of the kind of data we can generate.
 
 - There is an initial column, `AGI`, which contains the gene identifier. This is for information only - it can be discarded for the analysis.
-- A final label column, `Value`, contains either 1 or -1. 1 means the gene was expressed in a particular cell type, while -1 means it was not expressed.
-- All the remaining columns are features (transcription factor binding motifs) that exist in the promoter of one or more genes. These are dummy encoded\*: 1 indicates the feature was present, 0 indicates it was absent.
+- A final label column, `Value`, is dummy encoded*: either 1 or -1. 1 means the gene was expressed in a particular cell type, while -1 means it was not expressed.
+- All the remaining columns are features (transcription factor binding motifs) that exist in the promoter of one or more genes. These are binary: 1 indicates the feature was present, 0 indicates it was absent.
 
 \* *note: we can also provide scalar values rather than dummy encoding.*
 
