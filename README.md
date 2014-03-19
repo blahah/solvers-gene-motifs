@@ -28,5 +28,5 @@ We want to be able to:
 
 or to rephrase without the biology:
 
-1. Predict the `Value` given the motif columns.
+1. Predict the `Value` given the feature columns.
 2. Identify which features are important in the predictions.
